@@ -1,0 +1,80 @@
+body {
+    /* background: #000;
+    color: #fff; */
+}
+button {
+    color: #fff;
+    background-color: #2d8cf0;
+    border-color: #2d8cf0;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+button:hover {
+    opacity: 0.9;
+    transition: all 0.3s;
+}
+
+.fengge {
+    background: #ccc;
+    height: 1px;
+    width: 100%;
+    overflow: hidden;
+    margin: 10px 0;
+}
+input {
+    height: 20px;
+    line-height: 1.5;
+    padding: 4px 7px;
+    font-size: 12px;
+    border: 1px solid #dcdee2;
+    border-radius: 4px;
+    color: #515a6e;
+    background-color: #fff;
+    vertical-align: middle;
+}
+textarea {
+    border: 1px solid #dcdee2;
+    border-radius: 4px;
+    color: #515a6e;
+    background-color: #fff;
+}
+#loading {
+    padding: 10px 20px;
+    font-size: 1.5;
+}
+/* loading screen background color */
+#bonfire-pageloader {
+    /* background-color: #1fb6db; */
+}
+/* loading icon color */
+#bonfire-pageloader svg {
+    fill: #1fb6db;
+}
+
+#bonfire-pageloader svg {
+    -webkit-animation: spin 2s linear infinite;
+    -moz-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    width: 50px;
+    height: 50px;
+}
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(-360deg);
+    }
+}
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(-360deg);
+    }
+}
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+}

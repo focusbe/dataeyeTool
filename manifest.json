@@ -1,0 +1,23 @@
+{
+    "name": "dataeyeTool",
+    "description": "dataeye视频素材下载助手",
+    "version": "1.0",
+    "minimum_chrome_version": "16.0.884",
+    "permissions": ["downloads", "<all_urls>"],
+    "browser_action": { "default_popup": "popup.html" },
+    "manifest_version": 2,
+    "icons": {
+        "16": "icon.png",
+        "32": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["jquery.min.js"],
+            "css": ["css/style.css"],
+            "run_at": "document_end"
+        }
+    ]
+}
