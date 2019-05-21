@@ -215,5 +215,7 @@ function keepData() {
                 chrome.extension.sendRequest(null);
             }
         });
+    } else {
+        chrome.extension.sendRequest(null);
     }
 }
