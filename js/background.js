@@ -10,6 +10,9 @@ function ab2str(u, f) {
 }
 chrome.webRequest.onBeforeRequest.addListener(
     function(details) {
+        if(details.url.indexOf('.m3u8')>-1||details.url.indexOf('.flv')>-1){
+            console.log(details);
+        }
         if (!!details && !!details.url && details.url.indexOf("adx.dataeye.com/search/searchMaterial") > -1) {
             if (!!details.requestBody && (!!details.requestBody.raw || !!details.requestBody.formData)) {
                 if (!!details.requestBody.formData) {
